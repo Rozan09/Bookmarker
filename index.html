@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="head text-center pb-3 d-flex justify-content-center align-items-center position-relative">
+            <h1 class="position-relative mt-3 mb-5">Bookmarker</h1>
+        </div>
+        <div class="line pb-4"></div>
+        <div class="d-flex justify-content-center">
+            <p class="text-center fs-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                    class="fa-solid fa-bookmark"></i></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold"><i
+                    class="fa-solid fa-book-bookmark pe-2"></i> Site
+                Name</label>
+            <input type="text" class="form-control" style="color: black; font-weight: 500;"
+                id="exampleFormControlInput1"placeholder="Bookmark Name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold"><i class="fa-solid fa-link pe-2"></i> Site
+                URL</label>
+            <input type="text" class="form-control" style="color: black; font-weight: 500;"
+                id="exampleFormControlInput2" placeholder="Website URL">
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-3">
+                    <div class="modal-header border-0">
+                        <div class="circles d-flex">
+                            <div class="rounded-circle first mx-1"></div>
+                            <div class="rounded-circle second mx-1"></div>
+                            <div class="rounded-circle third mx-1"></div>
+                            <i id="closeElement" class="fa-solid fa-xmark fa-2x position-absolute top-0 end-0 m-3 text-black" data-bs-dismiss="modal" aria-label="Close"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body fs-5">
+                        Site Name or Url is not valid, Please follow the rules below :
+                    </div>
+                    <div class="txt"><i class="fa-regular fa-circle-right fs-5 ps-3 pe-2"></i>Site name must contain at least 3 characters</div>
+                    <div class="txt"><i class="fa-regular fa-circle-right fs-5 ps-3 pe-2"></i>Site URL must be a valid one</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button onclick="validate()" id="submit"
+                class="submit px-5 py-2 mb-4 rounded-2 border-0 text-white my-2">Submit</button>
+        </div>
+        <div class="line pb-4"></div>
+        <table class="table table-light text-dark text-center">
+            <thead>
+                <tr class="fw-lighter">
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="info">
+                <!-- <tr>
+                    <th>1</th>
+                    <th>123</th>
+                    <th><button class="visit rounded-2 border-0 text-white"><i class="fa-solid fa-eye"></i> Visit</button></th>
+                    <th><button class="delete rounded-2 border-0 text-white"><i class="fa-solid fa-trash-can"></i> Delete</button></th>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

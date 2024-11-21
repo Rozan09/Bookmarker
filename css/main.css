@@ -1,0 +1,150 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+.pt-sans-caption-regular {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .pt-sans-caption-bold {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+::selection {
+    background: #fec260;
+}
+
+body {
+    background: #F7ECDE;
+    font-family: PT Sans Caption;
+}
+
+h1 {
+    font-family: pacifico;
+    font-size: 50px;
+    color: #352E28;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all .5s;
+}
+
+h1:hover:before {
+    height: 40px;
+}
+
+.line {
+    border-top: 2px dotted #352e28;
+    ;
+}
+
+p {
+    font-family: Righteous;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    color: transparent;
+    background-clip: text;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 5px #fec26055;
+}
+.invalid:focus{
+    border-color: #dc3545;
+    box-shadow: 0 0 0 4px #ff00002b;
+    background-image: url(../download.svg);
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position:right;
+}
+.invalid{
+    border-color: #dc3545;
+}
+.valid{
+    border-color: #198754;
+}
+.valid:focus{
+    border-color: #198754;
+    box-shadow: 0 0 0 4px #21890538;
+    background-image: url(../download2.svg);
+    background-repeat: no-repeat;
+    background-size: 2%;
+    background-position:right;
+}
+input{
+    color: #3ca55c;
+}
+.rounded-circle{
+    width: 20px;
+    height: 20px;
+}
+.first{
+    background-color:#F15F5D ;
+}
+.second{
+    background-color: #FEBE2E;
+}
+.third{
+    background-color:#4DB748 ;
+}
+.modal-body{
+    font-family:Bree Serif ;
+}
+.modal i{
+    color: #BB4120;
+}
+.txt{
+    font-size: 18px;
+    line-height: 40px;
+}
+.submit{
+    background-color: #d1512d;
+    font-weight:500;
+    font-size: 18px;
+    transition: all .4s;
+}
+.submit:hover{
+    background-color: #bb4120;
+    border: 0.75px solid #7a2c17;
+}
+.visit{
+    background-color: #9eb23b;
+    padding: 6px 16px;
+    transition: all .4s;
+}
+.visit:hover{
+    background-color: #8a9e23;
+    border: 0.75px solid #6e8018;
+}
+.delete{
+    background-color: #eb1d36;
+    padding: 6px 16px;
+    transition: all .4s;
+}
+.delete:hover{
+    background-color: #d30820;
+    border: 0.75px solid #ba081d;
+}
